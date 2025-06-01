@@ -1,0 +1,18 @@
+[GLOBAL]
+pants_version = "2.26.0"
+backend_packages = [
+  "pants.backend.python",
+    "pants.backend.python.lint.black",
+    "pants.backend.python.lint.isort",
+]
+local_cache = false
+colors=true
+
+[source]
+marker_filenames = ["pyproject.toml"]
+
+[python]
+interpreter_constraints = ["==3.13.*"]
+
+[anonymous-telemetry]
+enabled = false
