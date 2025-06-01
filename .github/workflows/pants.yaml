@@ -24,9 +24,12 @@ jobs:
     - name: Check BUILD files
       run: |
         pants tailor --check update-build-files --check ::
-    - name: Lint and typecheck
+    - name: Lint
       run: |
-        pants lint check ::
+        pants lint ::
+    - name: Typecheck
+      run: |
+        pants check ::
     - name: Test
       run: |
         pants test ::

@@ -1,4 +1,6 @@
-import httpx  # hack to get this into the pex build.
+# hack to get httpx into the pex build.  It's needed specifically for testing fastapi
+
+import httpx  # noqa: F401
 from api.main import app
 from fastapi.testclient import TestClient
 

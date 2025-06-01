@@ -18,3 +18,9 @@ interpreter_constraints = ["==3.13.*"]
 
 [anonymous-telemetry]
 enabled = false
+
+[isort]
+args = "--profile black"
+
+[flake8]
+args = ["--max-line-length 150"]
