@@ -14,4 +14,9 @@ dev = [
     "flake8>=7.2.0",
     "isort>=6.0.1",
     "mypy>=1.16.0",
+    "myst-parser>=4.0.1",
+    "notion-client>=2.3.0",
+    "sphinx>=8.2.3",
+    "sphinx-autobuild>=2024.10.3",
+    "sphinx-notion>=0.0.2",
 ]
